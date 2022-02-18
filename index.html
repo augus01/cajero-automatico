@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="container">
+        <section class="container-child">
+            <div class="contenedor-pantalla">
+                <div class="pantalla-dinamica">
+
+                    <div class="caja-texto-dinamico" id="salida-dinamica">
+                        <p class="texto-dinamico" id="salida-1"></p>
+                        <p class="texto-dinamico" id="salida-2"> </p>
+                        <p class="texto-dinamico" id="salida-3"> </p>
+                        <div id="form-dinamico">
+                            <form onSubmit="return validarForm()" id="incia-secion">
+                                <label for="name">Nombre usuario:</label><br>
+                                <input type="text" id="name" name="name"><br>
+                                <label for="password">Contraseña:</label><br>
+                                <input type="text" id="password" name="password">
+                                <button type="submit" id="enviar-form""">Iniciar sesión</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="caja-num-user">
+                        <div id="introduce-num"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-interacciones">
+                <div class="panel-num" id="caja-panel-numerico">
+                    <img class="img-responsive" src="https://c.tenor.com/INGHdW5pQjEAAAAC/chainsaw-man.gif">
+                    
+                </div>
+                <div class="panel-opciones">
+                    <ul class="interacciones" id="menu-interacciones">
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
